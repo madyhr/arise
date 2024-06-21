@@ -1,0 +1,65 @@
+[0.013s] Invoking command in '/home/madyhr/robotics/dev_ws/src/arise/build/arise': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake /home/madyhr/robotics/dev_ws/src/arise -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/madyhr/robotics/dev_ws/src/arise/install/arise
+[0.186s] -- The C compiler identification is GNU 13.2.0
+[0.624s] -- The CXX compiler identification is GNU 13.2.0
+[1.002s] -- Detecting C compiler ABI info
+[1.163s] -- Detecting C compiler ABI info - done
+[1.169s] -- Check for working C compiler: /usr/bin/cc - skipped
+[1.170s] -- Detecting C compile features
+[1.171s] -- Detecting C compile features - done
+[1.229s] -- Detecting CXX compiler ABI info
+[1.398s] -- Detecting CXX compiler ABI info - done
+[1.406s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.406s] -- Detecting CXX compile features
+[1.406s] -- Detecting CXX compile features - done
+[1.418s] -- Found ament_cmake: 2.5.0 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[1.528s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[1.616s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[1.656s] -- Found ament_lint_auto: 0.17.0 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+[1.757s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[1.757s] -- Configured cppcheck include dirs: 
+[1.757s] -- Configured cppcheck exclude dirs and/or files: 
+[1.759s] -- Added test 'flake8' to check Python code syntax and style conventions
+[1.759s] -- Configured 'flake8' exclude dirs and/or files: 
+[1.762s] -- Added test 'lint_cmake' to check CMake code style
+[1.764s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[1.776s] -- Added test 'uncrustify' to check C / C++ code style
+[1.776s] -- Configured uncrustify additional arguments: 
+[1.778s] -- Added test 'xmllint' to check XML markup files
+[1.781s] -- Configuring done (1.8s)
+[1.786s] -- Generating done (0.0s)
+[1.787s] -- Build files have been written to: /home/madyhr/robotics/dev_ws/src/arise/build/arise
+[1.791s] Invoked command in '/home/madyhr/robotics/dev_ws/src/arise/build/arise' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake /home/madyhr/robotics/dev_ws/src/arise -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/madyhr/robotics/dev_ws/src/arise/install/arise
+[1.792s] Invoking command in '/home/madyhr/robotics/dev_ws/src/arise/build/arise': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/madyhr/robotics/dev_ws/src/arise/build/arise -- -j16 -l16
+[1.821s] Invoked command in '/home/madyhr/robotics/dev_ws/src/arise/build/arise' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/madyhr/robotics/dev_ws/src/arise/build/arise -- -j16 -l16
+[1.842s] Invoking command in '/home/madyhr/robotics/dev_ws/src/arise/build/arise': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /home/madyhr/robotics/dev_ws/src/arise/build/arise
+[1.847s] -- Install configuration: ""
+[1.847s] -- Execute custom install script
+[1.848s] -- Symlinking: /home/madyhr/robotics/dev_ws/src/arise/install/arise/share/arise/launch/hexapod.launch.py
+[1.854s] -- Symlinking: /home/madyhr/robotics/dev_ws/src/arise/install/arise/share/arise/launch/listener.launch.py
+[1.860s] -- Symlinking: /home/madyhr/robotics/dev_ws/src/arise/install/arise/share/arise/launch/talker.launch.py
+[1.866s] -- Symlinking: /home/madyhr/robotics/dev_ws/src/arise/install/arise/share/arise/launch/velocity_control.launch.py
+[1.873s] -- Symlinking: /home/madyhr/robotics/dev_ws/src/arise/install/arise/share/arise/scripts/helper_functions.py
+[1.878s] -- Symlinking: /home/madyhr/robotics/dev_ws/src/arise/install/arise/share/arise/scripts/hexapod.py
+[1.884s] -- Symlinking: /home/madyhr/robotics/dev_ws/src/arise/install/arise/share/arise/scripts/hexapod_kinematics.py
+[1.890s] -- Symlinking: /home/madyhr/robotics/dev_ws/src/arise/install/arise/share/arise/scripts/spider_leg.py
+[1.896s] -- Symlinking: /home/madyhr/robotics/dev_ws/src/arise/install/arise/share/arise/scripts/velocity_control.py
+[1.902s] -- Symlinking: /home/madyhr/robotics/dev_ws/src/arise/install/arise/lib/arise/hexapod.launch.py
+[1.909s] -- Symlinking: /home/madyhr/robotics/dev_ws/src/arise/install/arise/lib/arise/velocity_control.launch.py
+[1.915s] -- Symlinking: /home/madyhr/robotics/dev_ws/src/arise/install/arise/lib/arise/hexapod_kinematics.py
+[1.921s] -- Symlinking: /home/madyhr/robotics/dev_ws/src/arise/install/arise/lib/arise/velocity_control.py
+[1.928s] -- Symlinking: /home/madyhr/robotics/dev_ws/src/arise/install/arise/share/ament_index/resource_index/package_run_dependencies/arise
+[1.934s] -- Symlinking: /home/madyhr/robotics/dev_ws/src/arise/install/arise/share/ament_index/resource_index/parent_prefix_path/arise
+[1.941s] -- Symlinking: /home/madyhr/robotics/dev_ws/src/arise/install/arise/share/arise/environment/ament_prefix_path.sh
+[1.947s] -- Symlinking: /home/madyhr/robotics/dev_ws/src/arise/install/arise/share/arise/environment/ament_prefix_path.dsv
+[1.953s] -- Symlinking: /home/madyhr/robotics/dev_ws/src/arise/install/arise/share/arise/environment/path.sh
+[1.959s] -- Symlinking: /home/madyhr/robotics/dev_ws/src/arise/install/arise/share/arise/environment/path.dsv
+[1.965s] -- Symlinking: /home/madyhr/robotics/dev_ws/src/arise/install/arise/share/arise/local_setup.bash
+[1.972s] -- Symlinking: /home/madyhr/robotics/dev_ws/src/arise/install/arise/share/arise/local_setup.sh
+[1.978s] -- Symlinking: /home/madyhr/robotics/dev_ws/src/arise/install/arise/share/arise/local_setup.zsh
+[1.984s] -- Symlinking: /home/madyhr/robotics/dev_ws/src/arise/install/arise/share/arise/local_setup.dsv
+[1.990s] -- Symlinking: /home/madyhr/robotics/dev_ws/src/arise/install/arise/share/arise/package.dsv
+[1.997s] -- Symlinking: /home/madyhr/robotics/dev_ws/src/arise/install/arise/share/ament_index/resource_index/packages/arise
+[2.003s] -- Symlinking: /home/madyhr/robotics/dev_ws/src/arise/install/arise/share/arise/cmake/ariseConfig.cmake
+[2.010s] -- Symlinking: /home/madyhr/robotics/dev_ws/src/arise/install/arise/share/arise/cmake/ariseConfig-version.cmake
+[2.016s] -- Symlinking: /home/madyhr/robotics/dev_ws/src/arise/install/arise/share/arise/package.xml
+[2.024s] Invoked command in '/home/madyhr/robotics/dev_ws/src/arise/build/arise' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /home/madyhr/robotics/dev_ws/src/arise/build/arise

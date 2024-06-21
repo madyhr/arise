@@ -1,0 +1,1 @@
+/home/madyhr/robotics/dev_ws/src/arise/scripts/hexapod_kinematics.py

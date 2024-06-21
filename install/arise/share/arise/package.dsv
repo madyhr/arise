@@ -1,0 +1,8 @@
+source;share/arise/hook/cmake_prefix_path.ps1
+source;share/arise/hook/cmake_prefix_path.dsv
+source;share/arise/hook/cmake_prefix_path.sh
+source;share/arise/local_setup.bash
+source;share/arise/local_setup.dsv
+source;share/arise/local_setup.ps1
+source;share/arise/local_setup.sh
+source;share/arise/local_setup.zsh
