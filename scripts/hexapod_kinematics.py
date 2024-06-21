@@ -4,7 +4,7 @@ from rclpy.node import Node
 from geometry_msgs.msg import Twist
 from rclpy.executors import ExternalShutdownException
 
-class hexapod(Node):
+class hexapod_node(Node):
 
     def __init__(self):
         super().__init__("hexapod_node")
@@ -21,7 +21,7 @@ def main(args = None):
 
     rclpy.init(args=args)
 
-    node = hexapod()
+    node = hexapod_node()
     try:
         rclpy.spin(node)
     except (KeyboardInterrupt, ExternalShutdownException):
