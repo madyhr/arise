@@ -4,7 +4,7 @@ Hexapod robot hobby project based primarily on MakeYourPet (https://github.com/M
 
 ## Mechanical
 
-![Alt text](/doc/hexapod_leg.jpg?raw=true)
+<img src="https://github.com/madyhr/arise/blob/master/doc/hexapod_leg.jpg" width=30% height=30%>
 
 ### Previous tasks:
 - 3D printing of base frame and leg components
