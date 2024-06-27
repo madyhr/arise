@@ -10,9 +10,11 @@ Hexapod robot hobby project based primarily on MakeYourPet (https://github.com/M
 - 3D printing of base frame and leg components
 - Assembly of one leg for kinematics testing
 
-### Current task: Attempting to fix servo jitter by use of different screws and friction rings in the 3 joints
+### Current task: 
+Attempting to fix servo jitter by use of different screws and friction rings in the 3 joints
 
-### Next up: As more components arrive, more of the main body will be assembled
+### Next up: 
+As more components arrive, more of the main body will be assembled
 
 ## Software
 
@@ -23,9 +25,11 @@ Hexapod robot hobby project based primarily on MakeYourPet (https://github.com/M
 - ROS2 main software structure
 - Link between RP2040 on servo2040 board and RPi5
 
-### Current task: Establishing efficient communication protocols between servo controller (servo2040) and RPi5 for velocity commands
+### Current task: 
+Establishing efficient communication protocols between servo controller (servo2040) and RPi5 for velocity commands
 
-### Next up: Adjusting inverse kinematics parameters to real life conditions to achieve smoother motion
+### Next up: 
+Adjusting inverse kinematics parameters to real life conditions to achieve smoother motion
 
 ## Electrical
 
@@ -33,6 +37,8 @@ Hexapod robot hobby project based primarily on MakeYourPet (https://github.com/M
 - Ensuring all components receive nominal voltages and can receive necessary currents
 - Preparing servo2040 board for relay module (still waiting for module itself to arrive)
 
-### Current task: Thinking of solutions to optimize wiring
+### Current task: 
+Thinking of solutions to optimize wiring
 
-### Next up: Implementing more optimal wiring solutions
+### Next up: 
+Implementing more optimal wiring solutions
