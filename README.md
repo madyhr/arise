@@ -1,6 +1,6 @@
 # ARISE hexapod
 
-Hexapod robot hobby project based primarily on MakeYourPet (https://github.com/MakeYourPet/hexapod) with many inspirations from other projects such as Aecert Robotics, James Brunton and of course the MakeYourPet discord. Goal is to make it serve as a platform to learn more about legged robots and how to integrate different sensors to achieve autonomous control using visual odometry / SLAM with ROS2. 
+Hexapod robot hobby project based primarily on MakeYourPet (https://github.com/MakeYourPet/hexapod) with many inspirations from other projects such as Aecert Robotics, James Bruton and of course the MakeYourPet discord. Goal is to make it serve as a platform to learn more about legged robots and how to integrate different sensors to achieve autonomous control using visual odometry / SLAM with ROS2. 
 
 ## Mechanical
 
