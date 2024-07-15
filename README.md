@@ -4,17 +4,19 @@ Hexapod robot hobby project based primarily on MakeYourPet (https://github.com/M
 
 ## Mechanical
 
-<img src="https://github.com/madyhr/arise/blob/master/doc/hexapod_leg.jpg" width=30% height=30%>
+<img src="https://github.com/madyhr/arise/blob/master/doc/arise_3_legs.gif" width=30% height=30%>
 
 ### Previous tasks:
 - 3D printing of base frame and leg components
-- Assembly of one leg for kinematics testing
+- Assembly of three legs for kinematics testing
+- Servo jitter fixed with friction rings made of rubber instead of PLA
+- Adjusting coxa, femur, tibia STLs from MakeYourPet to be compatible with M3 screws instead of M2 screws
 
 ### Current task: 
-Attempting to fix servo jitter by use of different screws and friction rings in the 3 joints
+Designing lower and upper body frame capable of keeping electronics organized and safe
 
 ### Next up: 
-As more components arrive, more of the main body will be assembled
+As more components arrive, more of the main body will be assembled (all 6 legs soon)
 
 ## Software
 
@@ -24,12 +26,14 @@ As more components arrive, more of the main body will be assembled
 - Adjustable speed mid trajectory
 - ROS2 main software structure
 - Link between RP2040 on servo2040 board and RPi5
+- Established efficient communication protocols between servo controller (servo2040) and RPi5 for velocity commands
+- Adjusting inverse kinematics parameters to translate ideal software model to real hardware model
 
 ### Current task: 
-Establishing efficient communication protocols between servo controller (servo2040) and RPi5 for velocity commands
+- Writing up end-of-control movement to reset leg positions after control signals stop
 
 ### Next up: 
-Adjusting inverse kinematics parameters to real life conditions to achieve smoother motion
+- Writing the code for using a wireless (PS4) controller to send velocity commands
 
 ## Electrical
 
@@ -38,7 +42,7 @@ Adjusting inverse kinematics parameters to real life conditions to achieve smoot
 - Preparing servo2040 board for relay module (still waiting for module itself to arrive)
 
 ### Current task: 
-Thinking of solutions to optimize wiring
+- Testing relay module and battery power
 
 ### Next up: 
-Implementing more optimal wiring solutions
+- Thinking of solutions to optimize wiring (follows upper/lower frame development)
