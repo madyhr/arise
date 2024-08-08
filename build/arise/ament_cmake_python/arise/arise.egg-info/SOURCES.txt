@@ -1,0 +1,7 @@
+setup.py
+arise/__init__.py
+arise/module_to_import.py
+arise.egg-info/PKG-INFO
+arise.egg-info/SOURCES.txt
+arise.egg-info/dependency_links.txt
+arise.egg-info/top_level.txt

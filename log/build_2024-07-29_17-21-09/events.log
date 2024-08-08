@@ -1,0 +1,105 @@
+[0.000000] (-) TimerEvent: {}
+[0.000323] (arise) JobQueued: {'identifier': 'arise', 'dependencies': OrderedDict()}
+[0.001026] (arise) JobStarted: {'identifier': 'arise'}
+[0.025940] (arise) JobProgress: {'identifier': 'arise', 'progress': 'cmake'}
+[0.028756] (arise) JobProgress: {'identifier': 'arise', 'progress': 'build'}
+[0.029948] (arise) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/marcus/Documents/robotics/robot_ws/build/arise', '--', '-j4', '-l4'], 'cwd': '/home/marcus/Documents/robotics/robot_ws/build/arise', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'marcus', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/marcus', 'OLDPWD': '/home/marcus/Documents/robotics/robot_ws/src', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '1583', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1002/bus', 'COLORTERM': 'truecolor', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/marcus/Documents/robotics/robot_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'marcus', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1002.slice/user@1002.service/session.slice/org.gnome.Shell@wayland.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'marcus', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'PATH': '/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/robotpi:@/tmp/.ICE-unix/1546,unix/robotpi:/tmp/.ICE-unix/1546', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/8c9e998b_35c7_4480_82a4_5e11ffffc4ca', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1002', 'DISPLAY': ':0', 'LANG': 'C.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1002/.mutter-Xwaylandauth.5E9LR2', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'GNOME_TERMINAL_SERVICE': ':1.1157', 'SSH_AUTH_SOCK': '/run/user/1002/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/marcus/Documents/robotics/robot_ws/install/arise:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/marcus/Documents/robotics/robot_ws/build/arise', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/home/marcus/Documents/robotics/robot_ws/install/arise:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[0.099683] (-) TimerEvent: {}
+[0.131054] (arise) StdoutLine: {'line': b'-- Found ament_cmake: 2.5.2 (/opt/ros/jazzy/share/ament_cmake/cmake)\n'}
+[0.199825] (-) TimerEvent: {}
+[0.300358] (-) TimerEvent: {}
+[0.400958] (-) TimerEvent: {}
+[0.501787] (-) TimerEvent: {}
+[0.604962] (-) TimerEvent: {}
+[0.646400] (arise) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[0.705086] (-) TimerEvent: {}
+[0.715840] (arise) StdoutLine: {'line': b'-- Found rclpy: 7.1.1 (/opt/ros/jazzy/share/rclpy/cmake)\n'}
+[0.716926] (arise) StdoutLine: {'line': b'-- Found rclcpp: 28.1.3 (/opt/ros/jazzy/share/rclcpp/cmake)\n'}
+[0.793791] (arise) StdoutLine: {'line': b'-- Found rosidl_generator_c: 4.6.3 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)\n'}
+[0.805199] (-) TimerEvent: {}
+[0.851773] (arise) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 4.6.3 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)\n'}
+[0.882567] (arise) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.905279] (-) TimerEvent: {}
+[0.917422] (arise) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.005402] (-) TimerEvent: {}
+[1.063504] (arise) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 7.3.1 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)\n'}
+[1.068951] (arise) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 8.4.1 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)\n'}
+[1.105485] (-) TimerEvent: {}
+[1.205833] (-) TimerEvent: {}
+[1.215341] (arise) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[1.305972] (-) TimerEvent: {}
+[1.365084] (arise) StdoutLine: {'line': b'-- Found geometry_msgs: 5.3.5 (/opt/ros/jazzy/share/geometry_msgs/cmake)\n'}
+[1.406114] (-) TimerEvent: {}
+[1.506486] (-) TimerEvent: {}
+[1.604722] (arise) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.17.1 (/opt/ros/jazzy/share/ament_lint_auto/cmake)\n'}
+[1.606574] (-) TimerEvent: {}
+[1.706913] (-) TimerEvent: {}
+[1.807375] (-) TimerEvent: {}
+[1.807732] (arise) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[1.808060] (arise) StdoutLine: {'line': b"-- Configured 'flake8' exclude dirs and/or files: \n"}
+[1.810323] (arise) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[1.812354] (arise) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257\n"}
+[1.819438] (arise) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[1.825038] (arise) StdoutLine: {'line': b'-- Configuring done (1.7s)\n'}
+[1.844809] (arise) StdoutLine: {'line': b'-- Generating done (0.0s)\n'}
+[1.854007] (arise) StdoutLine: {'line': b'-- Build files have been written to: /home/marcus/Documents/robotics/robot_ws/build/arise\n'}
+[1.907502] (-) TimerEvent: {}
+[1.945377] (arise) StdoutLine: {'line': b'Built target ament_cmake_python_symlink_arise\n'}
+[2.007638] (-) TimerEvent: {}
+[2.109433] (-) TimerEvent: {}
+[2.209788] (-) TimerEvent: {}
+[2.310137] (-) TimerEvent: {}
+[2.330838] (arise) StdoutLine: {'line': b'running egg_info\n'}
+[2.368624] (arise) StdoutLine: {'line': b'writing arise.egg-info/PKG-INFO\n'}
+[2.368999] (arise) StdoutLine: {'line': b'writing dependency_links to arise.egg-info/dependency_links.txt\n'}
+[2.369292] (arise) StdoutLine: {'line': b'writing top-level names to arise.egg-info/top_level.txt\n'}
+[2.410239] (-) TimerEvent: {}
+[2.478857] (arise) StdoutLine: {'line': b"reading manifest file 'arise.egg-info/SOURCES.txt'\n"}
+[2.480220] (arise) StdoutLine: {'line': b"writing manifest file 'arise.egg-info/SOURCES.txt'\n"}
+[2.510363] (-) TimerEvent: {}
+[2.564292] (arise) StdoutLine: {'line': b'Built target ament_cmake_python_build_arise_egg\n'}
+[2.585962] (arise) CommandEnded: {'returncode': 0}
+[2.610457] (-) TimerEvent: {}
+[2.631560] (arise) JobProgress: {'identifier': 'arise', 'progress': 'install'}
+[2.650859] (arise) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/marcus/Documents/robotics/robot_ws/build/arise'], 'cwd': '/home/marcus/Documents/robotics/robot_ws/build/arise', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'marcus', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/marcus', 'OLDPWD': '/home/marcus/Documents/robotics/robot_ws/src', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '1583', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1002/bus', 'COLORTERM': 'truecolor', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/marcus/Documents/robotics/robot_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'marcus', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1002.slice/user@1002.service/session.slice/org.gnome.Shell@wayland.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'marcus', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'PATH': '/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/robotpi:@/tmp/.ICE-unix/1546,unix/robotpi:/tmp/.ICE-unix/1546', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/8c9e998b_35c7_4480_82a4_5e11ffffc4ca', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1002', 'DISPLAY': ':0', 'LANG': 'C.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1002/.mutter-Xwaylandauth.5E9LR2', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'GNOME_TERMINAL_SERVICE': ':1.1157', 'SSH_AUTH_SOCK': '/run/user/1002/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/marcus/Documents/robotics/robot_ws/install/arise:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/marcus/Documents/robotics/robot_ws/build/arise', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/home/marcus/Documents/robotics/robot_ws/install/arise:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[2.665403] (arise) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[2.666518] (arise) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[2.667241] (arise) StdoutLine: {'line': b'-- Up-to-date symlink: /home/marcus/Documents/robotics/robot_ws/install/arise/share/arise/launch/hexapod.launch.py\n'}
+[2.667443] (arise) StdoutLine: {'line': b'-- Up-to-date symlink: /home/marcus/Documents/robotics/robot_ws/install/arise/share/arise/launch/joystick.launch.py\n'}
+[2.667609] (arise) StdoutLine: {'line': b'-- Up-to-date symlink: /home/marcus/Documents/robotics/robot_ws/install/arise/share/arise/launch/listener.launch.py\n'}
+[2.667767] (arise) StdoutLine: {'line': b'-- Up-to-date symlink: /home/marcus/Documents/robotics/robot_ws/install/arise/share/arise/launch/talker.launch.py\n'}
+[2.667969] (arise) StdoutLine: {'line': b'-- Up-to-date symlink: /home/marcus/Documents/robotics/robot_ws/install/arise/share/arise/launch/velocity_control.launch.py\n'}
+[2.668330] (arise) StdoutLine: {'line': b'-- Up-to-date symlink: /home/marcus/Documents/robotics/robot_ws/install/arise/share/arise/config/joystick.yaml\n'}
+[2.668595] (arise) StdoutLine: {'line': b'-- Up-to-date symlink: /home/marcus/Documents/robotics/robot_ws/install/arise/share/arise/environment/pythonpath.sh\n'}
+[2.668838] (arise) StdoutLine: {'line': b'-- Up-to-date symlink: /home/marcus/Documents/robotics/robot_ws/install/arise/share/arise/environment/pythonpath.dsv\n'}
+[2.669350] (arise) StdoutLine: {'line': b'-- Up-to-date symlink: /home/marcus/Documents/robotics/robot_ws/install/arise/lib/python3.12/site-packages/arise-0.0.0-py3.12.egg-info/PKG-INFO\n'}
+[2.669544] (arise) StdoutLine: {'line': b'-- Up-to-date symlink: /home/marcus/Documents/robotics/robot_ws/install/arise/lib/python3.12/site-packages/arise-0.0.0-py3.12.egg-info/SOURCES.txt\n'}
+[2.669724] (arise) StdoutLine: {'line': b'-- Up-to-date symlink: /home/marcus/Documents/robotics/robot_ws/install/arise/lib/python3.12/site-packages/arise-0.0.0-py3.12.egg-info/dependency_links.txt\n'}
+[2.669923] (arise) StdoutLine: {'line': b'-- Up-to-date symlink: /home/marcus/Documents/robotics/robot_ws/install/arise/lib/python3.12/site-packages/arise-0.0.0-py3.12.egg-info/top_level.txt\n'}
+[2.670453] (arise) StdoutLine: {'line': b'-- Up-to-date symlink: /home/marcus/Documents/robotics/robot_ws/install/arise/lib/python3.12/site-packages/arise/__init__.py\n'}
+[2.670627] (arise) StdoutLine: {'line': b'-- Up-to-date symlink: /home/marcus/Documents/robotics/robot_ws/install/arise/lib/python3.12/site-packages/arise/module_to_import.py\n'}
+[2.670827] (arise) StdoutLine: {'line': b'-- Symlinking: /home/marcus/Documents/robotics/robot_ws/install/arise/lib/arise/vel_sub_pub.py\n'}
+[2.710570] (-) TimerEvent: {}
+[2.739546] (arise) StdoutLine: {'line': b'-- Up-to-date symlink: /home/marcus/Documents/robotics/robot_ws/install/arise/share/ament_index/resource_index/package_run_dependencies/arise\n'}
+[2.741654] (arise) StdoutLine: {'line': b'-- Up-to-date symlink: /home/marcus/Documents/robotics/robot_ws/install/arise/share/ament_index/resource_index/parent_prefix_path/arise\n'}
+[2.742048] (arise) StdoutLine: {'line': b'-- Up-to-date symlink: /home/marcus/Documents/robotics/robot_ws/install/arise/share/arise/environment/ament_prefix_path.sh\n'}
+[2.742329] (arise) StdoutLine: {'line': b'-- Up-to-date symlink: /home/marcus/Documents/robotics/robot_ws/install/arise/share/arise/environment/ament_prefix_path.dsv\n'}
+[2.742618] (arise) StdoutLine: {'line': b'-- Up-to-date symlink: /home/marcus/Documents/robotics/robot_ws/install/arise/share/arise/environment/path.sh\n'}
+[2.742931] (arise) StdoutLine: {'line': b'-- Up-to-date symlink: /home/marcus/Documents/robotics/robot_ws/install/arise/share/arise/environment/path.dsv\n'}
+[2.743392] (arise) StdoutLine: {'line': b'-- Up-to-date symlink: /home/marcus/Documents/robotics/robot_ws/install/arise/share/arise/local_setup.bash\n'}
+[2.744190] (arise) StdoutLine: {'line': b'-- Up-to-date symlink: /home/marcus/Documents/robotics/robot_ws/install/arise/share/arise/local_setup.sh\n'}
+[2.744910] (arise) StdoutLine: {'line': b'-- Up-to-date symlink: /home/marcus/Documents/robotics/robot_ws/install/arise/share/arise/local_setup.zsh\n'}
+[2.745136] (arise) StdoutLine: {'line': b'-- Up-to-date symlink: /home/marcus/Documents/robotics/robot_ws/install/arise/share/arise/local_setup.dsv\n'}
+[2.745382] (arise) StdoutLine: {'line': b'-- Symlinking: /home/marcus/Documents/robotics/robot_ws/install/arise/share/arise/package.dsv\n'}
+[2.764118] (arise) StdoutLine: {'line': b'-- Up-to-date symlink: /home/marcus/Documents/robotics/robot_ws/install/arise/share/ament_index/resource_index/packages/arise\n'}
+[2.764536] (arise) StdoutLine: {'line': b'-- Up-to-date symlink: /home/marcus/Documents/robotics/robot_ws/install/arise/share/arise/cmake/ariseConfig.cmake\n'}
+[2.764717] (arise) StdoutLine: {'line': b'-- Up-to-date symlink: /home/marcus/Documents/robotics/robot_ws/install/arise/share/arise/cmake/ariseConfig-version.cmake\n'}
+[2.764893] (arise) StdoutLine: {'line': b'-- Up-to-date symlink: /home/marcus/Documents/robotics/robot_ws/install/arise/share/arise/package.xml\n'}
+[2.810673] (-) TimerEvent: {}
+[2.911045] (-) TimerEvent: {}
+[2.947477] (arise) StdoutLine: {'line': b"Listing '/home/marcus/Documents/robotics/robot_ws/install/arise/lib/python3.12/site-packages/arise'...\n"}
+[2.967622] (arise) CommandEnded: {'returncode': 0}
+[3.011140] (-) TimerEvent: {}
+[3.111451] (-) TimerEvent: {}
+[3.179325] (arise) JobEnded: {'identifier': 'arise', 'rc': 0}
+[3.182826] (-) EventReactorShutdown: {}

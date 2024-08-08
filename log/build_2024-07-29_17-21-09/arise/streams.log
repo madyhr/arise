@@ -1,0 +1,66 @@
+[0.034s] Invoking command in '/home/marcus/Documents/robotics/robot_ws/build/arise': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/marcus/Documents/robotics/robot_ws/build/arise -- -j4 -l4
+[0.130s] -- Found ament_cmake: 2.5.2 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.645s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.715s] -- Found rclpy: 7.1.1 (/opt/ros/jazzy/share/rclpy/cmake)
+[0.716s] -- Found rclcpp: 28.1.3 (/opt/ros/jazzy/share/rclcpp/cmake)
+[0.793s] -- Found rosidl_generator_c: 4.6.3 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[0.851s] -- Found rosidl_generator_cpp: 4.6.3 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[0.881s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.916s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.062s] -- Found rmw_implementation_cmake: 7.3.1 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[1.068s] -- Found rmw_fastrtps_cpp: 8.4.1 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[1.214s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.364s] -- Found geometry_msgs: 5.3.5 (/opt/ros/jazzy/share/geometry_msgs/cmake)
+[1.604s] -- Found ament_lint_auto: 0.17.1 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+[1.807s] -- Added test 'flake8' to check Python code syntax and style conventions
+[1.807s] -- Configured 'flake8' exclude dirs and/or files: 
+[1.809s] -- Added test 'lint_cmake' to check CMake code style
+[1.812s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[1.818s] -- Added test 'xmllint' to check XML markup files
+[1.824s] -- Configuring done (1.7s)
+[1.844s] -- Generating done (0.0s)
+[1.853s] -- Build files have been written to: /home/marcus/Documents/robotics/robot_ws/build/arise
+[1.944s] Built target ament_cmake_python_symlink_arise
+[2.330s] running egg_info
+[2.367s] writing arise.egg-info/PKG-INFO
+[2.368s] writing dependency_links to arise.egg-info/dependency_links.txt
+[2.368s] writing top-level names to arise.egg-info/top_level.txt
+[2.478s] reading manifest file 'arise.egg-info/SOURCES.txt'
+[2.479s] writing manifest file 'arise.egg-info/SOURCES.txt'
+[2.563s] Built target ament_cmake_python_build_arise_egg
+[2.585s] Invoked command in '/home/marcus/Documents/robotics/robot_ws/build/arise' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/marcus/Documents/robotics/robot_ws/build/arise -- -j4 -l4
+[2.650s] Invoking command in '/home/marcus/Documents/robotics/robot_ws/build/arise': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/marcus/Documents/robotics/robot_ws/build/arise
+[2.664s] -- Install configuration: ""
+[2.665s] -- Execute custom install script
+[2.666s] -- Up-to-date symlink: /home/marcus/Documents/robotics/robot_ws/install/arise/share/arise/launch/hexapod.launch.py
+[2.666s] -- Up-to-date symlink: /home/marcus/Documents/robotics/robot_ws/install/arise/share/arise/launch/joystick.launch.py
+[2.666s] -- Up-to-date symlink: /home/marcus/Documents/robotics/robot_ws/install/arise/share/arise/launch/listener.launch.py
+[2.666s] -- Up-to-date symlink: /home/marcus/Documents/robotics/robot_ws/install/arise/share/arise/launch/talker.launch.py
+[2.667s] -- Up-to-date symlink: /home/marcus/Documents/robotics/robot_ws/install/arise/share/arise/launch/velocity_control.launch.py
+[2.667s] -- Up-to-date symlink: /home/marcus/Documents/robotics/robot_ws/install/arise/share/arise/config/joystick.yaml
+[2.667s] -- Up-to-date symlink: /home/marcus/Documents/robotics/robot_ws/install/arise/share/arise/environment/pythonpath.sh
+[2.667s] -- Up-to-date symlink: /home/marcus/Documents/robotics/robot_ws/install/arise/share/arise/environment/pythonpath.dsv
+[2.668s] -- Up-to-date symlink: /home/marcus/Documents/robotics/robot_ws/install/arise/lib/python3.12/site-packages/arise-0.0.0-py3.12.egg-info/PKG-INFO
+[2.668s] -- Up-to-date symlink: /home/marcus/Documents/robotics/robot_ws/install/arise/lib/python3.12/site-packages/arise-0.0.0-py3.12.egg-info/SOURCES.txt
+[2.668s] -- Up-to-date symlink: /home/marcus/Documents/robotics/robot_ws/install/arise/lib/python3.12/site-packages/arise-0.0.0-py3.12.egg-info/dependency_links.txt
+[2.669s] -- Up-to-date symlink: /home/marcus/Documents/robotics/robot_ws/install/arise/lib/python3.12/site-packages/arise-0.0.0-py3.12.egg-info/top_level.txt
+[2.669s] -- Up-to-date symlink: /home/marcus/Documents/robotics/robot_ws/install/arise/lib/python3.12/site-packages/arise/__init__.py
+[2.669s] -- Up-to-date symlink: /home/marcus/Documents/robotics/robot_ws/install/arise/lib/python3.12/site-packages/arise/module_to_import.py
+[2.669s] -- Symlinking: /home/marcus/Documents/robotics/robot_ws/install/arise/lib/arise/vel_sub_pub.py
+[2.739s] -- Up-to-date symlink: /home/marcus/Documents/robotics/robot_ws/install/arise/share/ament_index/resource_index/package_run_dependencies/arise
+[2.741s] -- Up-to-date symlink: /home/marcus/Documents/robotics/robot_ws/install/arise/share/ament_index/resource_index/parent_prefix_path/arise
+[2.741s] -- Up-to-date symlink: /home/marcus/Documents/robotics/robot_ws/install/arise/share/arise/environment/ament_prefix_path.sh
+[2.741s] -- Up-to-date symlink: /home/marcus/Documents/robotics/robot_ws/install/arise/share/arise/environment/ament_prefix_path.dsv
+[2.741s] -- Up-to-date symlink: /home/marcus/Documents/robotics/robot_ws/install/arise/share/arise/environment/path.sh
+[2.742s] -- Up-to-date symlink: /home/marcus/Documents/robotics/robot_ws/install/arise/share/arise/environment/path.dsv
+[2.742s] -- Up-to-date symlink: /home/marcus/Documents/robotics/robot_ws/install/arise/share/arise/local_setup.bash
+[2.743s] -- Up-to-date symlink: /home/marcus/Documents/robotics/robot_ws/install/arise/share/arise/local_setup.sh
+[2.744s] -- Up-to-date symlink: /home/marcus/Documents/robotics/robot_ws/install/arise/share/arise/local_setup.zsh
+[2.744s] -- Up-to-date symlink: /home/marcus/Documents/robotics/robot_ws/install/arise/share/arise/local_setup.dsv
+[2.744s] -- Symlinking: /home/marcus/Documents/robotics/robot_ws/install/arise/share/arise/package.dsv
+[2.763s] -- Up-to-date symlink: /home/marcus/Documents/robotics/robot_ws/install/arise/share/ament_index/resource_index/packages/arise
+[2.763s] -- Up-to-date symlink: /home/marcus/Documents/robotics/robot_ws/install/arise/share/arise/cmake/ariseConfig.cmake
+[2.763s] -- Up-to-date symlink: /home/marcus/Documents/robotics/robot_ws/install/arise/share/arise/cmake/ariseConfig-version.cmake
+[2.764s] -- Up-to-date symlink: /home/marcus/Documents/robotics/robot_ws/install/arise/share/arise/package.xml
+[2.946s] Listing '/home/marcus/Documents/robotics/robot_ws/install/arise/lib/python3.12/site-packages/arise'...
+[2.967s] Invoked command in '/home/marcus/Documents/robotics/robot_ws/build/arise' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/marcus/Documents/robotics/robot_ws/build/arise

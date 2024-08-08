@@ -1,1 +1,1 @@
-/home/madyhr/robotics/dev_ws/src/arise/build/arise/ament_cmake_environment_hooks/local_setup.zsh
+/home/marcus/Documents/robotics/robot_ws/build/arise/ament_cmake_environment_hooks/local_setup.zsh

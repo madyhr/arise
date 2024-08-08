@@ -1,1 +1,1 @@
-/home/madyhr/robotics/dev_ws/src/arise/launch/hexapod.launch.py
+/home/marcus/Documents/robotics/robot_ws/src/arise/launch/hexapod.launch.py

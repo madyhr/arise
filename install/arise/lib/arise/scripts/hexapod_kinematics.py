@@ -1,0 +1,1 @@
+/home/marcus/Documents/robotics/robot_ws/src/arise/scripts/hexapod_kinematics.py

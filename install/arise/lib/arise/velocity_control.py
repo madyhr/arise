@@ -1,1 +1,0 @@
-/home/madyhr/robotics/dev_ws/src/arise/scripts/velocity_control.py

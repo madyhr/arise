@@ -1,0 +1,50 @@
+[0.024s] Invoking command in '/home/marcus/Documents/robotics/robot_ws/build/arise': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/marcus/Documents/robotics/robot_ws/build/arise -- -j4 -l4
+[0.069s] -- Found ament_cmake: 2.5.2 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.445s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.457s] -- Found rclpy: 7.1.1 (/opt/ros/jazzy/share/rclpy/cmake)
+[0.458s] -- Found geometry_msgs: 5.3.5 (/opt/ros/jazzy/share/geometry_msgs/cmake)
+[0.513s] -- Found rosidl_generator_c: 4.6.3 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[0.532s] -- Found rosidl_generator_cpp: 4.6.3 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[0.556s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.580s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.646s] -- Found ament_lint_auto: 0.17.1 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+[0.835s] -- Added test 'flake8' to check Python code syntax and style conventions
+[0.835s] -- Configured 'flake8' exclude dirs and/or files: 
+[0.835s] -- Added test 'lint_cmake' to check CMake code style
+[0.836s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[0.838s] -- Added test 'xmllint' to check XML markup files
+[0.840s] -- Configuring done (0.8s)
+[0.848s] -- Generating done (0.0s)
+[0.854s] -- Build files have been written to: /home/marcus/Documents/robotics/robot_ws/build/arise
+[0.901s] Invoked command in '/home/marcus/Documents/robotics/robot_ws/build/arise' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/marcus/Documents/robotics/robot_ws/build/arise -- -j4 -l4
+[0.963s] Invoking command in '/home/marcus/Documents/robotics/robot_ws/build/arise': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/marcus/Documents/robotics/robot_ws/build/arise
+[0.978s] -- Install configuration: ""
+[0.978s] -- Execute custom install script
+[0.988s] -- Up-to-date symlink: /home/marcus/Documents/robotics/robot_ws/install/arise/share/arise/launch/hexapod.launch.py
+[0.988s] -- Up-to-date symlink: /home/marcus/Documents/robotics/robot_ws/install/arise/share/arise/launch/joystick.launch.py
+[0.988s] -- Up-to-date symlink: /home/marcus/Documents/robotics/robot_ws/install/arise/share/arise/launch/listener.launch.py
+[0.988s] -- Up-to-date symlink: /home/marcus/Documents/robotics/robot_ws/install/arise/share/arise/launch/talker.launch.py
+[0.989s] -- Up-to-date symlink: /home/marcus/Documents/robotics/robot_ws/install/arise/share/arise/launch/velocity_control.launch.py
+[0.989s] -- Up-to-date symlink: /home/marcus/Documents/robotics/robot_ws/install/arise/share/arise/config/joystick.yaml
+[0.989s] -- Symlinking: /home/marcus/Documents/robotics/robot_ws/install/arise/lib/arise/scripts/helper_functions.py
+[1.015s] -- Symlinking: /home/marcus/Documents/robotics/robot_ws/install/arise/lib/arise/scripts/hexapod.py
+[1.032s] -- Symlinking: /home/marcus/Documents/robotics/robot_ws/install/arise/lib/arise/scripts/hexapod_kinematics.py
+[1.049s] -- Symlinking: /home/marcus/Documents/robotics/robot_ws/install/arise/lib/arise/scripts/spider_leg.py
+[1.068s] -- Symlinking: /home/marcus/Documents/robotics/robot_ws/install/arise/lib/arise/scripts/vel_subscriber.py
+[1.086s] -- Symlinking: /home/marcus/Documents/robotics/robot_ws/install/arise/lib/arise/scripts/velocity_control.py
+[1.106s] -- Up-to-date symlink: /home/marcus/Documents/robotics/robot_ws/install/arise/share/ament_index/resource_index/package_run_dependencies/arise
+[1.106s] -- Up-to-date symlink: /home/marcus/Documents/robotics/robot_ws/install/arise/share/ament_index/resource_index/parent_prefix_path/arise
+[1.106s] -- Up-to-date symlink: /home/marcus/Documents/robotics/robot_ws/install/arise/share/arise/environment/ament_prefix_path.sh
+[1.108s] -- Up-to-date symlink: /home/marcus/Documents/robotics/robot_ws/install/arise/share/arise/environment/ament_prefix_path.dsv
+[1.109s] -- Up-to-date symlink: /home/marcus/Documents/robotics/robot_ws/install/arise/share/arise/environment/path.sh
+[1.109s] -- Up-to-date symlink: /home/marcus/Documents/robotics/robot_ws/install/arise/share/arise/environment/path.dsv
+[1.109s] -- Up-to-date symlink: /home/marcus/Documents/robotics/robot_ws/install/arise/share/arise/local_setup.bash
+[1.110s] -- Up-to-date symlink: /home/marcus/Documents/robotics/robot_ws/install/arise/share/arise/local_setup.sh
+[1.110s] -- Up-to-date symlink: /home/marcus/Documents/robotics/robot_ws/install/arise/share/arise/local_setup.zsh
+[1.110s] -- Up-to-date symlink: /home/marcus/Documents/robotics/robot_ws/install/arise/share/arise/local_setup.dsv
+[1.110s] -- Symlinking: /home/marcus/Documents/robotics/robot_ws/install/arise/share/arise/package.dsv
+[1.127s] -- Up-to-date symlink: /home/marcus/Documents/robotics/robot_ws/install/arise/share/ament_index/resource_index/packages/arise
+[1.127s] -- Up-to-date symlink: /home/marcus/Documents/robotics/robot_ws/install/arise/share/arise/cmake/ariseConfig.cmake
+[1.128s] -- Up-to-date symlink: /home/marcus/Documents/robotics/robot_ws/install/arise/share/arise/cmake/ariseConfig-version.cmake
+[1.128s] -- Up-to-date symlink: /home/marcus/Documents/robotics/robot_ws/install/arise/share/arise/package.xml
+[1.131s] Invoked command in '/home/marcus/Documents/robotics/robot_ws/build/arise' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/marcus/Documents/robotics/robot_ws/build/arise

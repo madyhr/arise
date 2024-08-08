@@ -1,0 +1,39 @@
+-- The C compiler identification is GNU 13.2.0
+-- The CXX compiler identification is GNU 13.2.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake: 2.5.2 (/opt/ros/jazzy/share/ament_cmake/cmake)
+-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+-- Override CMake install command with custom implementation using symlinks instead of copying resources
+-- Found rclpy: 7.1.1 (/opt/ros/jazzy/share/rclpy/cmake)
+-- Found ament_lint_auto: 0.17.1 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+-- Added test 'lint_cmake' to check CMake code style
+-- Added test 'xmllint' to check XML markup files
+-- Configuring done (1.7s)
+-- Generating done (0.0s)
+-- Build files have been written to: /home/marcus/Documents/robotics/robot_ws/build/arise
+-- Install configuration: ""
+-- Execute custom install script
+-- Symlinking: /home/marcus/Documents/robotics/robot_ws/install/arise/share/ament_index/resource_index/package_run_dependencies/arise
+-- Symlinking: /home/marcus/Documents/robotics/robot_ws/install/arise/share/ament_index/resource_index/parent_prefix_path/arise
+-- Symlinking: /home/marcus/Documents/robotics/robot_ws/install/arise/share/arise/environment/ament_prefix_path.sh
+-- Symlinking: /home/marcus/Documents/robotics/robot_ws/install/arise/share/arise/environment/ament_prefix_path.dsv
+-- Symlinking: /home/marcus/Documents/robotics/robot_ws/install/arise/share/arise/environment/path.sh
+-- Symlinking: /home/marcus/Documents/robotics/robot_ws/install/arise/share/arise/environment/path.dsv
+-- Symlinking: /home/marcus/Documents/robotics/robot_ws/install/arise/share/arise/local_setup.bash
+-- Symlinking: /home/marcus/Documents/robotics/robot_ws/install/arise/share/arise/local_setup.sh
+-- Symlinking: /home/marcus/Documents/robotics/robot_ws/install/arise/share/arise/local_setup.zsh
+-- Symlinking: /home/marcus/Documents/robotics/robot_ws/install/arise/share/arise/local_setup.dsv
+-- Symlinking: /home/marcus/Documents/robotics/robot_ws/install/arise/share/arise/package.dsv
+-- Symlinking: /home/marcus/Documents/robotics/robot_ws/install/arise/share/ament_index/resource_index/packages/arise
+-- Symlinking: /home/marcus/Documents/robotics/robot_ws/install/arise/share/arise/cmake/ariseConfig.cmake
+-- Symlinking: /home/marcus/Documents/robotics/robot_ws/install/arise/share/arise/cmake/ariseConfig-version.cmake
+-- Symlinking: /home/marcus/Documents/robotics/robot_ws/install/arise/share/arise/package.xml

@@ -23,7 +23,7 @@ function(ament_cmake_symlink_install_directory cmake_current_source_dir)
 
   # make destination absolute path and ensure that it exists
   if(NOT IS_ABSOLUTE "${ARG_DESTINATION}")
-    set(ARG_DESTINATION "/home/madyhr/robotics/dev_ws/src/arise/install/arise/${ARG_DESTINATION}")
+    set(ARG_DESTINATION "/home/marcus/Documents/robotics/robot_ws/install/arise/${ARG_DESTINATION}")
   endif()
   if(NOT EXISTS "${ARG_DESTINATION}")
     file(MAKE_DIRECTORY "${ARG_DESTINATION}")
@@ -123,7 +123,7 @@ function(ament_cmake_symlink_install_files cmake_current_source_dir)
 
   # make destination an absolute path and ensure that it exists
   if(NOT IS_ABSOLUTE "${ARG_DESTINATION}")
-    set(ARG_DESTINATION "/home/madyhr/robotics/dev_ws/src/arise/install/arise/${ARG_DESTINATION}")
+    set(ARG_DESTINATION "/home/marcus/Documents/robotics/robot_ws/install/arise/${ARG_DESTINATION}")
   endif()
   if(NOT EXISTS "${ARG_DESTINATION}")
     file(MAKE_DIRECTORY "${ARG_DESTINATION}")
@@ -181,7 +181,7 @@ function(ament_cmake_symlink_install_programs cmake_current_source_dir)
 
   # make destination an absolute path and ensure that it exists
   if(NOT IS_ABSOLUTE "${ARG_DESTINATION}")
-    set(ARG_DESTINATION "/home/madyhr/robotics/dev_ws/src/arise/install/arise/${ARG_DESTINATION}")
+    set(ARG_DESTINATION "/home/marcus/Documents/robotics/robot_ws/install/arise/${ARG_DESTINATION}")
   endif()
   if(NOT EXISTS "${ARG_DESTINATION}")
     file(MAKE_DIRECTORY "${ARG_DESTINATION}")
@@ -251,7 +251,7 @@ function(ament_cmake_symlink_install_targets)
 
     # make destination an absolute path and ensure that it exists
     if(NOT IS_ABSOLUTE "${destination}")
-      set(destination "/home/madyhr/robotics/dev_ws/src/arise/install/arise/${destination}")
+      set(destination "/home/marcus/Documents/robotics/robot_ws/install/arise/${destination}")
     endif()
     if(NOT EXISTS "${destination}")
       file(MAKE_DIRECTORY "${destination}")
@@ -310,50 +310,62 @@ message(STATUS "Execute custom install script")
 
 # begin of custom install code
 
-# install(DIRECTORY "launch" "scripts" "DESTINATION" "share/arise")
-ament_cmake_symlink_install_directory("/home/madyhr/robotics/dev_ws/src/arise" DIRECTORY "launch" "scripts" "DESTINATION" "share/arise")
+# install(DIRECTORY "launch" "config" "DESTINATION" "share/arise")
+ament_cmake_symlink_install_directory("/home/marcus/Documents/robotics/robot_ws/src/arise" DIRECTORY "launch" "config" "DESTINATION" "share/arise")
 
-# install(PROGRAMS "launch/hexapod.launch.py" "launch/velocity_control.launch.py" "scripts/hexapod_kinematics.py" "scripts/velocity_control.py" "DESTINATION" "lib/arise")
-ament_cmake_symlink_install_programs("/home/madyhr/robotics/dev_ws/src/arise" PROGRAMS "launch/hexapod.launch.py" "launch/velocity_control.launch.py" "scripts/hexapod_kinematics.py" "scripts/velocity_control.py" "DESTINATION" "lib/arise")
+# install(FILES "/home/marcus/Documents/robotics/robot_ws/build/arise/ament_cmake_environment_hooks/pythonpath.sh" "DESTINATION" "share/arise/environment")
+ament_cmake_symlink_install_files("/home/marcus/Documents/robotics/robot_ws/src/arise" FILES "/home/marcus/Documents/robotics/robot_ws/build/arise/ament_cmake_environment_hooks/pythonpath.sh" "DESTINATION" "share/arise/environment")
 
-# install(FILES "/home/madyhr/robotics/dev_ws/src/arise/build/arise/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/arise" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
-ament_cmake_symlink_install_files("/home/madyhr/robotics/dev_ws/src/arise" FILES "/home/madyhr/robotics/dev_ws/src/arise/build/arise/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/arise" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
+# install(FILES "/home/marcus/Documents/robotics/robot_ws/build/arise/ament_cmake_environment_hooks/pythonpath.dsv" "DESTINATION" "share/arise/environment")
+ament_cmake_symlink_install_files("/home/marcus/Documents/robotics/robot_ws/src/arise" FILES "/home/marcus/Documents/robotics/robot_ws/build/arise/ament_cmake_environment_hooks/pythonpath.dsv" "DESTINATION" "share/arise/environment")
 
-# install(FILES "/home/madyhr/robotics/dev_ws/src/arise/build/arise/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/arise" "DESTINATION" "share/ament_index/resource_index/parent_prefix_path")
-ament_cmake_symlink_install_files("/home/madyhr/robotics/dev_ws/src/arise" FILES "/home/madyhr/robotics/dev_ws/src/arise/build/arise/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/arise" "DESTINATION" "share/ament_index/resource_index/parent_prefix_path")
+# install(DIRECTORY "/home/marcus/Documents/robotics/robot_ws/build/arise/ament_cmake_python/arise/arise.egg-info/" "DESTINATION" "lib/python3.12/site-packages/arise-0.0.0-py3.12.egg-info")
+ament_cmake_symlink_install_directory("/home/marcus/Documents/robotics/robot_ws/src/arise" DIRECTORY "/home/marcus/Documents/robotics/robot_ws/build/arise/ament_cmake_python/arise/arise.egg-info/" "DESTINATION" "lib/python3.12/site-packages/arise-0.0.0-py3.12.egg-info")
+
+# install(DIRECTORY "/home/marcus/Documents/robotics/robot_ws/src/arise/arise/" "DESTINATION" "lib/python3.12/site-packages/arise" "PATTERN_EXCLUDE" "*.pyc" "PATTERN_EXCLUDE" "__pycache__")
+ament_cmake_symlink_install_directory("/home/marcus/Documents/robotics/robot_ws/src/arise" DIRECTORY "/home/marcus/Documents/robotics/robot_ws/src/arise/arise/" "DESTINATION" "lib/python3.12/site-packages/arise" "PATTERN_EXCLUDE" "*.pyc" "PATTERN_EXCLUDE" "__pycache__")
+
+# install(PROGRAMS "scripts/vel_sub_pub.py" "scripts/serial_sub_pub.py" "DESTINATION" "lib/arise")
+ament_cmake_symlink_install_programs("/home/marcus/Documents/robotics/robot_ws/src/arise" PROGRAMS "scripts/vel_sub_pub.py" "scripts/serial_sub_pub.py" "DESTINATION" "lib/arise")
+
+# install(FILES "/home/marcus/Documents/robotics/robot_ws/build/arise/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/arise" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
+ament_cmake_symlink_install_files("/home/marcus/Documents/robotics/robot_ws/src/arise" FILES "/home/marcus/Documents/robotics/robot_ws/build/arise/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/arise" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
+
+# install(FILES "/home/marcus/Documents/robotics/robot_ws/build/arise/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/arise" "DESTINATION" "share/ament_index/resource_index/parent_prefix_path")
+ament_cmake_symlink_install_files("/home/marcus/Documents/robotics/robot_ws/src/arise" FILES "/home/marcus/Documents/robotics/robot_ws/build/arise/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/arise" "DESTINATION" "share/ament_index/resource_index/parent_prefix_path")
 
 # install(FILES "/opt/ros/jazzy/share/ament_cmake_core/cmake/environment_hooks/environment/ament_prefix_path.sh" "DESTINATION" "share/arise/environment")
-ament_cmake_symlink_install_files("/home/madyhr/robotics/dev_ws/src/arise" FILES "/opt/ros/jazzy/share/ament_cmake_core/cmake/environment_hooks/environment/ament_prefix_path.sh" "DESTINATION" "share/arise/environment")
+ament_cmake_symlink_install_files("/home/marcus/Documents/robotics/robot_ws/src/arise" FILES "/opt/ros/jazzy/share/ament_cmake_core/cmake/environment_hooks/environment/ament_prefix_path.sh" "DESTINATION" "share/arise/environment")
 
-# install(FILES "/home/madyhr/robotics/dev_ws/src/arise/build/arise/ament_cmake_environment_hooks/ament_prefix_path.dsv" "DESTINATION" "share/arise/environment")
-ament_cmake_symlink_install_files("/home/madyhr/robotics/dev_ws/src/arise" FILES "/home/madyhr/robotics/dev_ws/src/arise/build/arise/ament_cmake_environment_hooks/ament_prefix_path.dsv" "DESTINATION" "share/arise/environment")
+# install(FILES "/home/marcus/Documents/robotics/robot_ws/build/arise/ament_cmake_environment_hooks/ament_prefix_path.dsv" "DESTINATION" "share/arise/environment")
+ament_cmake_symlink_install_files("/home/marcus/Documents/robotics/robot_ws/src/arise" FILES "/home/marcus/Documents/robotics/robot_ws/build/arise/ament_cmake_environment_hooks/ament_prefix_path.dsv" "DESTINATION" "share/arise/environment")
 
 # install(FILES "/opt/ros/jazzy/share/ament_cmake_core/cmake/environment_hooks/environment/path.sh" "DESTINATION" "share/arise/environment")
-ament_cmake_symlink_install_files("/home/madyhr/robotics/dev_ws/src/arise" FILES "/opt/ros/jazzy/share/ament_cmake_core/cmake/environment_hooks/environment/path.sh" "DESTINATION" "share/arise/environment")
+ament_cmake_symlink_install_files("/home/marcus/Documents/robotics/robot_ws/src/arise" FILES "/opt/ros/jazzy/share/ament_cmake_core/cmake/environment_hooks/environment/path.sh" "DESTINATION" "share/arise/environment")
 
-# install(FILES "/home/madyhr/robotics/dev_ws/src/arise/build/arise/ament_cmake_environment_hooks/path.dsv" "DESTINATION" "share/arise/environment")
-ament_cmake_symlink_install_files("/home/madyhr/robotics/dev_ws/src/arise" FILES "/home/madyhr/robotics/dev_ws/src/arise/build/arise/ament_cmake_environment_hooks/path.dsv" "DESTINATION" "share/arise/environment")
+# install(FILES "/home/marcus/Documents/robotics/robot_ws/build/arise/ament_cmake_environment_hooks/path.dsv" "DESTINATION" "share/arise/environment")
+ament_cmake_symlink_install_files("/home/marcus/Documents/robotics/robot_ws/src/arise" FILES "/home/marcus/Documents/robotics/robot_ws/build/arise/ament_cmake_environment_hooks/path.dsv" "DESTINATION" "share/arise/environment")
 
-# install(FILES "/home/madyhr/robotics/dev_ws/src/arise/build/arise/ament_cmake_environment_hooks/local_setup.bash" "DESTINATION" "share/arise")
-ament_cmake_symlink_install_files("/home/madyhr/robotics/dev_ws/src/arise" FILES "/home/madyhr/robotics/dev_ws/src/arise/build/arise/ament_cmake_environment_hooks/local_setup.bash" "DESTINATION" "share/arise")
+# install(FILES "/home/marcus/Documents/robotics/robot_ws/build/arise/ament_cmake_environment_hooks/local_setup.bash" "DESTINATION" "share/arise")
+ament_cmake_symlink_install_files("/home/marcus/Documents/robotics/robot_ws/src/arise" FILES "/home/marcus/Documents/robotics/robot_ws/build/arise/ament_cmake_environment_hooks/local_setup.bash" "DESTINATION" "share/arise")
 
-# install(FILES "/home/madyhr/robotics/dev_ws/src/arise/build/arise/ament_cmake_environment_hooks/local_setup.sh" "DESTINATION" "share/arise")
-ament_cmake_symlink_install_files("/home/madyhr/robotics/dev_ws/src/arise" FILES "/home/madyhr/robotics/dev_ws/src/arise/build/arise/ament_cmake_environment_hooks/local_setup.sh" "DESTINATION" "share/arise")
+# install(FILES "/home/marcus/Documents/robotics/robot_ws/build/arise/ament_cmake_environment_hooks/local_setup.sh" "DESTINATION" "share/arise")
+ament_cmake_symlink_install_files("/home/marcus/Documents/robotics/robot_ws/src/arise" FILES "/home/marcus/Documents/robotics/robot_ws/build/arise/ament_cmake_environment_hooks/local_setup.sh" "DESTINATION" "share/arise")
 
-# install(FILES "/home/madyhr/robotics/dev_ws/src/arise/build/arise/ament_cmake_environment_hooks/local_setup.zsh" "DESTINATION" "share/arise")
-ament_cmake_symlink_install_files("/home/madyhr/robotics/dev_ws/src/arise" FILES "/home/madyhr/robotics/dev_ws/src/arise/build/arise/ament_cmake_environment_hooks/local_setup.zsh" "DESTINATION" "share/arise")
+# install(FILES "/home/marcus/Documents/robotics/robot_ws/build/arise/ament_cmake_environment_hooks/local_setup.zsh" "DESTINATION" "share/arise")
+ament_cmake_symlink_install_files("/home/marcus/Documents/robotics/robot_ws/src/arise" FILES "/home/marcus/Documents/robotics/robot_ws/build/arise/ament_cmake_environment_hooks/local_setup.zsh" "DESTINATION" "share/arise")
 
-# install(FILES "/home/madyhr/robotics/dev_ws/src/arise/build/arise/ament_cmake_environment_hooks/local_setup.dsv" "DESTINATION" "share/arise")
-ament_cmake_symlink_install_files("/home/madyhr/robotics/dev_ws/src/arise" FILES "/home/madyhr/robotics/dev_ws/src/arise/build/arise/ament_cmake_environment_hooks/local_setup.dsv" "DESTINATION" "share/arise")
+# install(FILES "/home/marcus/Documents/robotics/robot_ws/build/arise/ament_cmake_environment_hooks/local_setup.dsv" "DESTINATION" "share/arise")
+ament_cmake_symlink_install_files("/home/marcus/Documents/robotics/robot_ws/src/arise" FILES "/home/marcus/Documents/robotics/robot_ws/build/arise/ament_cmake_environment_hooks/local_setup.dsv" "DESTINATION" "share/arise")
 
-# install(FILES "/home/madyhr/robotics/dev_ws/src/arise/build/arise/ament_cmake_environment_hooks/package.dsv" "DESTINATION" "share/arise")
-ament_cmake_symlink_install_files("/home/madyhr/robotics/dev_ws/src/arise" FILES "/home/madyhr/robotics/dev_ws/src/arise/build/arise/ament_cmake_environment_hooks/package.dsv" "DESTINATION" "share/arise")
+# install(FILES "/home/marcus/Documents/robotics/robot_ws/build/arise/ament_cmake_environment_hooks/package.dsv" "DESTINATION" "share/arise")
+ament_cmake_symlink_install_files("/home/marcus/Documents/robotics/robot_ws/src/arise" FILES "/home/marcus/Documents/robotics/robot_ws/build/arise/ament_cmake_environment_hooks/package.dsv" "DESTINATION" "share/arise")
 
-# install(FILES "/home/madyhr/robotics/dev_ws/src/arise/build/arise/ament_cmake_index/share/ament_index/resource_index/packages/arise" "DESTINATION" "share/ament_index/resource_index/packages")
-ament_cmake_symlink_install_files("/home/madyhr/robotics/dev_ws/src/arise" FILES "/home/madyhr/robotics/dev_ws/src/arise/build/arise/ament_cmake_index/share/ament_index/resource_index/packages/arise" "DESTINATION" "share/ament_index/resource_index/packages")
+# install(FILES "/home/marcus/Documents/robotics/robot_ws/build/arise/ament_cmake_index/share/ament_index/resource_index/packages/arise" "DESTINATION" "share/ament_index/resource_index/packages")
+ament_cmake_symlink_install_files("/home/marcus/Documents/robotics/robot_ws/src/arise" FILES "/home/marcus/Documents/robotics/robot_ws/build/arise/ament_cmake_index/share/ament_index/resource_index/packages/arise" "DESTINATION" "share/ament_index/resource_index/packages")
 
-# install(FILES "/home/madyhr/robotics/dev_ws/src/arise/build/arise/ament_cmake_core/ariseConfig.cmake" "/home/madyhr/robotics/dev_ws/src/arise/build/arise/ament_cmake_core/ariseConfig-version.cmake" "DESTINATION" "share/arise/cmake")
-ament_cmake_symlink_install_files("/home/madyhr/robotics/dev_ws/src/arise" FILES "/home/madyhr/robotics/dev_ws/src/arise/build/arise/ament_cmake_core/ariseConfig.cmake" "/home/madyhr/robotics/dev_ws/src/arise/build/arise/ament_cmake_core/ariseConfig-version.cmake" "DESTINATION" "share/arise/cmake")
+# install(FILES "/home/marcus/Documents/robotics/robot_ws/build/arise/ament_cmake_core/ariseConfig.cmake" "/home/marcus/Documents/robotics/robot_ws/build/arise/ament_cmake_core/ariseConfig-version.cmake" "DESTINATION" "share/arise/cmake")
+ament_cmake_symlink_install_files("/home/marcus/Documents/robotics/robot_ws/src/arise" FILES "/home/marcus/Documents/robotics/robot_ws/build/arise/ament_cmake_core/ariseConfig.cmake" "/home/marcus/Documents/robotics/robot_ws/build/arise/ament_cmake_core/ariseConfig-version.cmake" "DESTINATION" "share/arise/cmake")
 
-# install(FILES "/home/madyhr/robotics/dev_ws/src/arise/package.xml" "DESTINATION" "share/arise")
-ament_cmake_symlink_install_files("/home/madyhr/robotics/dev_ws/src/arise" FILES "/home/madyhr/robotics/dev_ws/src/arise/package.xml" "DESTINATION" "share/arise")
+# install(FILES "/home/marcus/Documents/robotics/robot_ws/src/arise/package.xml" "DESTINATION" "share/arise")
+ament_cmake_symlink_install_files("/home/marcus/Documents/robotics/robot_ws/src/arise" FILES "/home/marcus/Documents/robotics/robot_ws/src/arise/package.xml" "DESTINATION" "share/arise")

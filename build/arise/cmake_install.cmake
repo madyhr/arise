@@ -1,8 +1,8 @@
-# Install script for directory: /home/madyhr/robotics/dev_ws/src/arise
+# Install script for directory: /home/marcus/Documents/robotics/robot_ws/src/arise
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/madyhr/robotics/dev_ws/src/arise/install/arise")
+  set(CMAKE_INSTALL_PREFIX "/home/marcus/Documents/robotics/robot_ws/install/arise")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -43,7 +43,15 @@ if(NOT DEFINED CMAKE_OBJDUMP)
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  include("/home/madyhr/robotics/dev_ws/src/arise/build/arise/ament_cmake_symlink_install/ament_cmake_symlink_install.cmake")
+  include("/home/marcus/Documents/robotics/robot_ws/build/arise/ament_cmake_symlink_install/ament_cmake_symlink_install.cmake")
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  execute_process(
+        COMMAND
+        "/usr/bin/python3" "-m" "compileall"
+        "/home/marcus/Documents/robotics/robot_ws/install/arise/lib/python3.12/site-packages/arise"
+      )
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)
@@ -54,5 +62,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/madyhr/robotics/dev_ws/src/arise/build/arise/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/marcus/Documents/robotics/robot_ws/build/arise/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

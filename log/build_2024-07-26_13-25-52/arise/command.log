@@ -1,0 +1,2 @@
+Invoking command in '/home/marcus/Documents/robotics/robot_ws/build/arise': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/marcus/Documents/robotics/robot_ws/build/arise -- -j4 -l4
+Invoked command in '/home/marcus/Documents/robotics/robot_ws/build/arise' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/marcus/Documents/robotics/robot_ws/build/arise -- -j4 -l4

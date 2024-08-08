@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/madyhr/robotics/dev_ws/src/arise
+CMAKE_SOURCE_DIR = /home/marcus/Documents/robotics/robot_ws/src/arise
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/madyhr/robotics/dev_ws/src/arise/build/arise
+CMAKE_BINARY_DIR = /home/marcus/Documents/robotics/robot_ws/build/arise
 
 # Utility rule file for uninstall.
 
@@ -78,6 +78,6 @@ CMakeFiles/uninstall.dir/clean:
 .PHONY : CMakeFiles/uninstall.dir/clean
 
 CMakeFiles/uninstall.dir/depend:
-	cd /home/madyhr/robotics/dev_ws/src/arise/build/arise && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/madyhr/robotics/dev_ws/src/arise /home/madyhr/robotics/dev_ws/src/arise /home/madyhr/robotics/dev_ws/src/arise/build/arise /home/madyhr/robotics/dev_ws/src/arise/build/arise /home/madyhr/robotics/dev_ws/src/arise/build/arise/CMakeFiles/uninstall.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/marcus/Documents/robotics/robot_ws/build/arise && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/marcus/Documents/robotics/robot_ws/src/arise /home/marcus/Documents/robotics/robot_ws/src/arise /home/marcus/Documents/robotics/robot_ws/build/arise /home/marcus/Documents/robotics/robot_ws/build/arise /home/marcus/Documents/robotics/robot_ws/build/arise/CMakeFiles/uninstall.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/uninstall.dir/depend
 
