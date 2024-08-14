@@ -12,9 +12,10 @@ Hexapod robot hobby project based primarily on MakeYourPet (https://github.com/M
 - Servo jitter fixed with friction rings made of rubber instead of PLA
 - Adjusting coxa, femur, tibia STLs from MakeYourPet to be compatible with M3 screws instead of M2 screws
 - All six legs have been fitted to the main body frame
+- Designed lower and upper body frame capable of keeping electronics organized and safe
 
 ### Current task: 
-Designing lower and upper body frame capable of keeping electronics organized and safe
+- Back to fixing a bit of servo jitter as friction rings wear out... :(
 
 ### Next up: 
 Designing leg shields for coolness factor so they don't look as feeble and weak.
@@ -31,6 +32,7 @@ Designing leg shields for coolness factor so they don't look as feeble and weak.
 - Adjusting inverse kinematics parameters to translate ideal software model to real hardware model
 - Control commands sent through wired controller
 - Code organized into ROS2 framework with launch files etc
+- Added tripod gait with both strafe and rotation
 
 ### Current task: 
 - Writing up end-of-control movement to reset leg positions after control signals stop
@@ -44,9 +46,10 @@ Designing leg shields for coolness factor so they don't look as feeble and weak.
 - Ensuring all components receive nominal voltages and can receive necessary currents
 - Wiring for servo2040 and rover legs through lab power supply tested
 - Wiring for battery powered circuit complete but not tested (UBEC, buck converter, switches)
+- Completed tests of powering everything at once with batteries
 
 ### Current task: 
-- Tests of powering everything at once with batteries
+- Contemplating circuit design as weird bug with UBEC switch (that only power motors) causes RPi to turn off (but not lose power) 
 
 ### Next up: 
 - Thinking of solutions to optimize wiring (follows upper/lower frame development)
