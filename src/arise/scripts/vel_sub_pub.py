@@ -33,12 +33,6 @@ class vel_sub_pub_node(Node):
         self.data = None
         self.hexapod = hexapod
         self.timer = self.create_timer(0.02,self.timer_callback) # every 20 ms
-                # self.port_string = active_port
-        # try:
-        #     self.serial_connection = serial.Serial(port=f"/dev/tty{self.port_string}", parity=serial.PARITY_EVEN, stopbits=serial.STOPBITS_ONE, timeout=0.005)
-        #     self.get_logger().info('Serial connection established. Huzzah!')
-        # except serial.SerialException as e:
-        #     self.get_logger().error(f"Failed to connect to serial port: {e}")
 
     def listener_callback(self, msg: Twist):
         self.data = msg
@@ -52,28 +46,30 @@ class vel_sub_pub_node(Node):
         if self.data:
             x = self.data.linear.x
             y = self.data.linear.y
+            # rx = self.data.angular.yaw
+            rz = self.data.angular.z
 
-            speed, direction = calc_velocity(x,y)
-            self.hexapod.move_linear(speed, direction)
+            if abs(rz) < 0.01:
+                speed, direction = calc_velocity(x,y)
+                self.hexapod.move_linear(speed, direction)
+            else: 
+                speed = rz # abs(rz) maybe
+                if rz >= 0:
+                    direction = 1 # ccw
+                else:
+                    direction = -1 # cw
+                self.hexapod.move_angular(speed, direction)
 
 
             self.publish_angle_list()
             
-
-            # angle_msg = str(self.hexapod.angle_list) + "\r"
-            # print(angle_msg)
-            # s.write(angle_msg.encode())
-
+            # For debugging:
             self.get_logger().info(str(self.hexapod.angle_list) + 
                                    f"\n Leg2 pos: {self.hexapod.legs[1].joints[2]}" +
                                    f"\n Leg5 pos: {self.hexapod.legs[4].joints[2]}" + 
                                    f"\n t: {self.hexapod.t % 1}" +
                                    f"\n direction: {self.hexapod.current_direction}")
-
-            # self.serial_connection.write(angle_msg.encode())
-
-            # self.get_logger().info(str(f"Speed: {speed} | Direction: {direction}"))
-
+            # self.get_logger().info(str(self.data))
 
 def main(args=None):
     rclpy.init(args=args)

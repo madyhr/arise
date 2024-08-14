@@ -19,7 +19,7 @@ class serial_sub_pub_node(Node):
             self.listener_callback, 
             10)
         
-        self.data = None
+        self.data = [[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0]]
         self.timer = self.create_timer(0.02,self.timer_callback) # every 20 ms
         self.port_string = active_port
         try:
@@ -45,7 +45,7 @@ class serial_sub_pub_node(Node):
         # if self.data:
         
         angle_msg = str(self.data) + "\r"
-        self.get_logger().info(angle_msg)
+        # self.get_logger().info(angle_msg) # for debugging
         self.serial_connection.write(angle_msg.encode())
         # self.serial_connection.flush()
         self.counter += 1

@@ -1,7 +1,9 @@
 /home/marcus/Documents/robotics/robot_ws/install/arise/share/arise/launch/joystick.launch.py
+/home/marcus/Documents/robotics/robot_ws/install/arise/share/arise/launch/robot.launch.py
 /home/marcus/Documents/robotics/robot_ws/install/arise/share/arise/launch/serial_connection.launch.py
 /home/marcus/Documents/robotics/robot_ws/install/arise/share/arise/launch/velocity_control.launch.py
 /home/marcus/Documents/robotics/robot_ws/install/arise/share/arise/config/joystick.yaml
+/home/marcus/Documents/robotics/robot_ws/install/arise/share/arise/config/servo_calib.txt
 /home/marcus/Documents/robotics/robot_ws/install/arise/share/arise/environment/pythonpath.sh
 /home/marcus/Documents/robotics/robot_ws/install/arise/share/arise/environment/pythonpath.dsv
 /home/marcus/Documents/robotics/robot_ws/install/arise/lib/python3.12/site-packages/arise-0.0.0-py3.12.egg-info/PKG-INFO
