@@ -15,7 +15,7 @@ Hexapod robot hobby project based primarily on MakeYourPet (https://github.com/M
 - Designed lower and upper body frame capable of keeping electronics organized and safe
 
 ### Current task: 
-- Back to fixing a bit of servo jitter as friction rings wear out... :(
+- Re-designing the body to accomodate IMU (and camera in the future)
 
 ### Next up: 
 Designing leg shields for coolness factor so they don't look as feeble and weak.
@@ -35,10 +35,11 @@ Designing leg shields for coolness factor so they don't look as feeble and weak.
 - Added tripod gait with both strafe and rotation
 
 ### Current task: 
-- Writing up end-of-control movement to reset leg positions after control signals stop
+- Writing the code for using a wireless instead of wired controller to send velocity commands
+
 
 ### Next up: 
-- Writing the code for using a wireless instead of wired controller to send velocity commands
+- Writing up end-of-control movement to reset leg positions after control signals stop
 
 ## Electrical
 
