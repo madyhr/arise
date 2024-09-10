@@ -2,8 +2,7 @@
 
 Hexapod robot hobby project based primarily on MakeYourPet (https://github.com/MakeYourPet/hexapod) with many inspirations from other projects such as Aecert Robotics, James Bruton and of course the MakeYourPet discord. Goal is to make it serve as a platform to learn more about legged robots and how to integrate different sensors to achieve autonomous control using visual odometry / SLAM with ROS2. 
 
-<img src="https://github.com/madyhr/arise/blob/master/doc/arise_3_legs.gif" width=30% height=30%>
-[![Watch the video](https://img.youtube.com/vi/)](https://www.youtube.com/shorts/t1FO2vQvSlU?feature=share)
+[![Everything Is AWESOME](https://i.sstatic.net/q3ceS.png)](https://youtu.be/StTqXEQ2l-Y?t=35s "Everything Is AWESOME")
 
 ## Mechanical
 
